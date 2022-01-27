@@ -1711,10 +1711,10 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
-"@types/redux-form@^8.2.6":
-  version "8.2.6"
-  resolved "https://registry.yarnpkg.com/@types/redux-form/-/redux-form-8.2.6.tgz#dd67db05302da78cc338af43b557ca7b3572cea8"
-  integrity sha512-cwP8l2W6oDvi5i9q8rIH34PCV/ZtFTaWqdMnhT84jEFdbkD/jRvuL7hd3Q93y/SMvPedZUk0G9F7hDgAU049xQ==
+"@types/redux-form@^8.3.3":
+  version "8.3.3"
+  resolved "https://registry.yarnpkg.com/@types/redux-form/-/redux-form-8.3.3.tgz#67869d6da2936bb2806509e86356422d2d6eb288"
+  integrity sha512-RaxUMCXs72H4vSfwU4i/86/RDbQ4p3rK4/4TQvQXHJ49GTyEgdUgWDIaOnKZc84iNwvJTwv+ohDbw/tfXxLg7Q==
   dependencies:
     "@types/react" "*"
     redux "^3.6.0 || ^4.0.0"
