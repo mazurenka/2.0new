@@ -1,5 +1,6 @@
 import {FormAction, stopSubmit} from "redux-form";
 import {PhotosType, PostType, ProfileType} from '../types/types';
+import {usersAPI} from '../api/users-api';
 import {profileAPI} from '../api/profile-api';
 import {BaseThunkType, InferActionsTypes} from './redux-store';
 
@@ -74,7 +75,7 @@ export const updateStatus = (status: string): ThunkType => async (dispatch) => {
         if (data.resultCode === 0) {
             dispatch(actions.setStatus(status))
         }
-    } catch (error) {
+    } catch(error) {
         //
     }
 }
@@ -98,7 +99,7 @@ export const saveProfile = (profile: ProfileType): ThunkType => async (dispatch,
             throw new Error("userId can't be null")
         }
     } else {
-        dispatch(stopSubmit("edit-profile", {_error: data.messages[0]}))
+        dispatch(stopSubmit("edit-profile", {_error: data.messages[0] }))
         return Promise.reject(data.messages[0])
     }
 }

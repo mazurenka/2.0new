@@ -2,7 +2,7 @@ import {getAuthUserData} from "./auth-reducer"
 import {InferActionsTypes} from './redux-store';
 
 let initialState = {
-    initialized: false,
+    initialized: false
 };
 
 export type InitialStateType = typeof initialState

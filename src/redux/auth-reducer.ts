@@ -3,6 +3,7 @@ import {stopSubmit} from "redux-form";
 import {authAPI} from '../api/auth-api';
 import {securityAPI} from '../api/security-api';
 import {BaseThunkType, InferActionsTypes} from './redux-store';
+import {Action} from 'redux';
 import {FormAction} from 'redux-form/lib/actions';
 
 let initialState = {
